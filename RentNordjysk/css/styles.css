@@ -1,7 +1,8 @@
 
 :root {
-    --background-color: #e2eddd;
-    --nav-background-color: #ddecd5;
+    --background-color: #ddecd5;
+    --nav-background-color: #e2eddd;
+    --footer-background-color: #4c5530;
     --border-color: black;
 }
 
@@ -17,6 +18,7 @@ h1, h2, h3, a, p {
 }
 
 body {
+    /*background-color: var(--background-color);*/
     margin: 0px;
     height: 1vh;
     overflow: hidden;
@@ -25,10 +27,19 @@ body {
 }
 
 nav {
-    background-color: var(--background-color);
+    background-color: var(--nav-background-color);
     display: flex;
     width: 100%;
 }
+
+footer {
+    background-color: var(--footer-background-color);
+    display: flex;
+    flex-direction: column;
+    min-height: 30vh;
+    color: white;
+}
+
 
 nav > .nav-section {
     padding: 3rem 2rem;
@@ -36,6 +47,15 @@ nav > .nav-section {
     gap: 1rem;
     align-items: center;
     justify-content: center;
+}
+
+nav > .nav-section-active {
+    padding: 3rem 2rem;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    /* TO BE MADE */
 }
 
 #nav-logo{
