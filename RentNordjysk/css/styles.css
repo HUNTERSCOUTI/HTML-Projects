@@ -17,7 +17,6 @@ h1, h2, h3, a, p {
 }
 
 body {
-    background-color: var(--background-color);
     margin: 0px;
     height: 1vh;
     overflow: hidden;
@@ -26,16 +25,15 @@ body {
 }
 
 nav {
+    background-color: var(--background-color);
     display: flex;
     width: 100%;
-    border-bottom: 1px solid var(--border-color)
 }
 
 nav > .nav-section {
     padding: 3rem 2rem;
     display: flex;
     gap: 1rem;
-    border-left: 1px solid var(--border-color);
     align-items: center;
     justify-content: center;
 }
